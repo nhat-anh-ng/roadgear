@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section{
+    height: 100vh;
+    background: #000;
+}
+h1{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(50%);
+    width: 100%;
+    text-align: center;
+    color: rgb(218, 24, 24);
+    font-size: 5em;
+    letter-spacing: 0.2em;
+    font-family: 'Montserrati', sans-serif;
+}
+h1 span{
+    display: inline-block;
+   animation: smoke 5s linear forwards;
+}
+@keyframes smoke{
+    0%{
+        opacity: 1;
+        transform: rotateY(90deg);
+        filter: blur(0);
+    }
+}
+
+.container {
+    position: relative;
+    padding: 0 100px;
+    background: #000;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+}
+header .logo {
+
+    font-weight: 700;
+    color: red;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+header ul{
+    position: relative;
+    display: flex;
+}
+header ul li{
+    list-style: none;
+    margin: 0 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+header ul li a{
+    position: relative;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 4px 10px;
+    color: white;
+}
+header ul li:nth-child(3) a,
+header ul li:nth-child(4) a {
+    color: rgb(180, 179, 179);
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+img{
+    height: 300px;
+    width: 500px;
+}
+.content .bannerText{
+    position: relative;
+    max-width: 500px;
+    margin-right: 50px;
+}
+.content .bannerText h2{
+    font-size: 54px;
+    font-weight: 800;
+    line-height: 1.12em;
+    margin: 0 0 42px;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+.content .bannerText p{
+    font-size: 18px;
+    color: grey;
+    line-height: 1.8em;
+    margin: 30px 0;
+}
+
+a{
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: red;
+    letter-spacing: 1px;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 15px;
+    justify-content: left;
+}
+
+.content .bannerImg{
+    position: relative;
+    width: 580px;
+    height: 440px;
+}
+.content .bannerImg img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.body2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+}
+.container2{
+    position: relative;
+    width: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 80px;
+}
+.container2 .card{
+    position: relative;
+    max-width: 300px;
+    height: 215px;
+    background: #fff;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 202px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease-in-out;
+}
+.container2 .card:hover{
+    height: 420px;
+}
+.container2 .card .imgBx{
+    position: relative;
+    width: 260px;
+    height: 260px;
+    top: -60px;
+    left: 20px;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+.container2 .card .imgBx img{
+    max-width: 100%;
+    border-radius: 4px;
+}
+.container2 .card .content1{
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color: black;
+    background: white;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.4s ease-in-out;
+}
+.container2 .card:hover .content1{
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition-delay: 0.3s;
+}
+
+button{
+    text-transform: uppercase;
+    font-weight: 700;
+    color: red;
+    background-color: transparent;
+    letter-spacing: 1px;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 50px;
+    padding: 15px;
+    justify-content: center;
+}
+.g{
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    padding-bottom: 5%;
+    background: #000;
+}
+
+
+footer{
+    text-align: center;
+}
